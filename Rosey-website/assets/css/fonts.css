@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../fontsUrbanist-Italic.woff2') format('woff2'),
+        url('../fontsUrbanist-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../fontsUrbanist-Regular.woff2') format('woff2'),
+        url('../fontsUrbanist-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../fontsUrbanist-Black.woff2') format('woff2'),
+        url('../fontsUrbanist-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../fontsUrbanist-Bold.woff2') format('woff2'),
+        url('../fontsUrbanist-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../fontsUrbanist-BlackItalic.woff2') format('woff2'),
+        url('../fontsUrbanist-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../fontsUrbanist-MediumItalic.woff2') format('woff2'),
+        url('../fontsUrbanist-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../fontsUrbanist-Thin.woff2') format('woff2'),
+        url('../fontsUrbanist-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../fontsUrbanist-Regular.woff2') format('woff2'),
+        url('../fontsUrbanist-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../fontsUrbanist-Light.woff2') format('woff2'),
+        url('../fontsUrbanist-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../fontsUrbanist-ExtraLightItalic.woff2') format('woff2'),
+        url('../fontsUrbanist-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../fontsUrbanist-SemiBold.woff2') format('woff2'),
+        url('../fontsUrbanist-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../fontsUrbanist-ExtraLight.woff2') format('woff2'),
+        url('../fontsUrbanist-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../fontsUrbanist-Medium.woff2') format('woff2'),
+        url('../fontsUrbanist-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../fontsUrbanist-Italic.woff2') format('woff2'),
+        url('../fontsUrbanist-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../fontsUrbanist-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fontsUrbanist-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../fontsUrbanist-SemiBoldItalic.woff2') format('woff2'),
+        url('../fontsUrbanist-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../fontsUrbanist-ExtraBold.woff2') format('woff2'),
+        url('../fontsUrbanist-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../fontsUrbanist-LightItalic.woff2') format('woff2'),
+        url('../fontsUrbanist-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../fontsUrbanist-BoldItalic.woff2') format('woff2'),
+        url('../fontsUrbanist-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../fontsUrbanist-ThinItalic.woff2') format('woff2'),
+        url('../fontsUrbanist-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frank Ruhl Libre';
+    src: url('../fontsFrankRuhlLibre-Regular.woff2') format('woff2'),
+        url('../fontsFrankRuhlLibre-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frank Ruhl Libre';
+    src: url('../fontsFrankRuhlLibre-Light.woff2') format('woff2'),
+        url('../fontsFrankRuhlLibre-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frank Ruhl Libre';
+    src: url('../fontsFrankRuhlLibre-Bold.woff2') format('woff2'),
+        url('../fontsFrankRuhlLibre-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frank Ruhl Libre';
+    src: url('../fontsFrankRuhlLibre-ExtraBold.woff2') format('woff2'),
+        url('../fontsFrankRuhlLibre-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frank Ruhl Libre';
+    src: url('../fontsFrankRuhlLibre-Black.woff2') format('woff2'),
+        url('../fontsFrankRuhlLibre-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frank Ruhl Libre';
+    src: url('../fontsFrankRuhlLibre-SemiBold.woff2') format('woff2'),
+        url('../fontsFrankRuhlLibre-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frank Ruhl Libre';
+    src: url('../fontsFrankRuhlLibre-Regular.woff2') format('woff2'),
+        url('../fontsFrankRuhlLibre-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frank Ruhl Libre';
+    src: url('../fontsFrankRuhlLibre-Medium.woff2') format('woff2'),
+        url('../fontsFrankRuhlLibre-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let operator =parseInt(prompt("enter your choice")); 
+        let rechargeAmount = 100; 
+
+switch (operator) {
+  case "1":
+    switch (rechargeAmount) {
+      case 10:
+        console.log("Recharge successful! You have recharged your Airtel number with Rs. 10.");
+        break;
+      case 20:
+        console.log("Recharge successful! You have recharged your Airtel number with Rs. 20.");
+        break;
+      case 50:
+        console.log("Recharge successful! You have recharged your Airtel number with Rs. 50.");
+        break;
+      case 100:
+        console.log("Recharge successful! You have recharged your Airtel number with Rs. 100.");
+        break;
+      default:
+        console.log("Invalid recharge amount for Airtel.");
+    }
+    break;
+
+  case "2":
+    switch (rechargeAmount) {
+      case 10:
+        console.log("Recharge successful! You have recharged your Vodafone number with Rs. 10.");
+        break;
+      case 20:
+        console.log("Recharge successful! You have recharged your Vodafone number with Rs. 20.");
+        break;
+      case 50:
+        console.log("Recharge successful! You have recharged your Vodafone number with Rs. 50.");
+        break;
+      case 100:
+        console.log("Recharge successful! You have recharged your Vodafone number with Rs. 100.");
+        break;
+      default:
+        console.log("Invalid recharge amount for Vodafone.");
+    }
+    break;
+
+  case "3":
+    switch (rechargeAmount) {
+      case 10:
+        console.log("Recharge successful! You have recharged your Jio number with Rs. 10.");
+        break;
+      case 20:
+        console.log("Recharge successful! You have recharged your Jio number with Rs. 20.");
+        break;
+      case 50:
+        console.log("Recharge successful! You have recharged your Jio number with Rs. 50.");
+        break;
+      case 100:
+        console.log("Recharge successful! You have recharged your Jio number with Rs. 100.");
+        break;
+      default:
+        console.log("Invalid recharge amount for Jio.");
+    }
+    break;
+
+  default:
+    console.log("Invalid mobile operator.");
+}
+    </script>
+    
+</body>
+</html>
