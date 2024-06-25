@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure</title>
+</head>
+<body>
+    
+<button id="red" style="border-radius: 5px; width: 60px ;height: 30px; padding: 5px;margin: 10px; border: 3px solid black; ">Red</button>
+<button id="blue" style="border-radius: 5px; width: 60px ;height: 30px; padding: 5px;margin: 10px; border: 3px solid black; "> blue</button>
+<button id="black" style="border-radius: 5px; width: 60px ;height: 30px; padding: 5px;margin: 10px; border: 3px solid black; ">black</button>
+<button id="green"  style="border-radius: 5px; width: 60px ;height: 30px; padding: 5px;margin: 10px; border: 3px solid black; ">green</button>
+<button id="DeepPink"  style="border-radius: 5px; width: 70px ;height: 30px; padding: 5px;margin: 10px; border: 3px solid black; ">DeepPink</button>
+<button id="Gold" style="border-radius: 5px; width: 60px ;height: 30px; padding: 5px;margin: 10px; border: 3px solid black; ">Gold</button>
+<button id="LawnGreen"  style="border-radius: 5px; width:80px ;height: 30px; padding: 5px;margin: 10px; border: 3px solid black; ">LawnGreen</button>
+<button id="MistyRose"  style="border-radius: 5px; width: 80px ;height: 30px; padding: 5px;margin: 10px; border: 3px solid black; ">MistyRose</button>
+
+
+<script>
+
+
+function clickHendler(color){
+    return function(){
+        document.body.style.backgroundColor =`${color}`;
+    }
+}
+
+
+document.getElementById("red").onclick = clickHendler("red");
+document.getElementById("blue").onclick = clickHendler("blue");
+document.getElementById("black").onclick = clickHendler("black");
+document.getElementById("green").onclick = clickHendler("green");
+document.getElementById("DeepPink").onclick = clickHendler("DeepPink");
+document.getElementById("Gold").onclick = clickHendler("Gold");
+document.getElementById("LawnGreen").onclick = clickHendler("LawnGreen");
+document.getElementById("MistyRose").onclick = clickHendler("MistyRose");
+
+
+</script>
+
+
+
+</body>
+</html>
