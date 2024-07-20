@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<form action="">
+    <table border="2" align="center">
+        <thead>
+            <tr id="Name">
+                <td>Name :</td>
+               <td> <input id="" type="text" value=" " ></td>
+            </tr>
+            <tr id="Phone">
+                <td>Phone  :</td>
+               <td> <input id="" type="number" value=" " ></td>
+              
+            </tr>
+            <tr>
+                <td type="button" value="submit" onclick="savedata ()"> <button>Submit</button></td>
+            </tr>
+          
+        </thead>
+        <tbody></tbody>
+    </table>
+</form>
+
+    
+    <script type="text/javascript">
+
+        function savedata () {
+            let Name = Document.getElementByid('Name').value
+            let Phone = Document.getElementByid('Phone').value
+
+
+            if(Name){
+                alert("Name is required");
+                return false
+            }
+        }
+
+    </script>
+</body>
+</html>
