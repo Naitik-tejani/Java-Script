@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
-<form action="">
-    <table border="2" align="center">
-        <thead>
-            <tr id="Name">
+    <form>
+        <table border="2" align="center">
+
+
+            <tr>
                 <td>Name :</td>
-               <td> <input id="" type="text" value=" " ></td>
-            </tr>
-            <tr id="Phone">
-                <td>Phone  :</td>
-               <td> <input id="" type="number" value=" " ></td>
-              
+                <td> <input id="Name" type="text"></td>
             </tr>
             <tr>
-                <td type="button" value="submit" onclick="savedata ()"> <button>Submit</button></td>
-            </tr>
-          
-        </thead>
-        <tbody></tbody>
-    </table>
-</form>
+                <td>Phone :</td>
+                <td> <input id="Phone" type="number"></td>
 
-    
+            </tr>
+            <tr>
+                <td> </td>
+                <td> <button type="button" onclick="savedata()">Submit</button></td>
+            </tr>
+
+        </table>
+    </form>
+
+
     <script type="text/javascript">
 
-        function savedata () {
-            let Name = Document.getElementByid('Name').value
-            let Phone = Document.getElementByid('Phone').value
+        function savedata() {
+            let Name = document.getElementById('Name').value
+            let Phone = document.getElementById('Phone').value
 
 
-            if(Name){
+            if (!Name) {
                 alert("Name is required");
                 return false
             }
+            if (!Phone) {
+                alert("Phone is required");
+                return false
+            }
+            console.log("done");
+            
         }
 
     </script>
 </body>
+
 </html>
