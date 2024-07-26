@@ -16,44 +16,45 @@
     <div align="center" class="my-5">
         <form>
             <div class="row mb-3">
-                <label class="col-sm-2 col-form-label " style="font-size: 20px;">Name :</label>
+                <label for="name" class="col-sm-2 col-form-label " style="font-size: 20px;">Name :</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputName">
+                    <input type="text" class="form-control" id="name">
                 </div>
             </div>
             <br>
             <span id="nameerr" style="color:red;"></span>
-
+            <br>
             <div class="row mb-3">
-                <label for="inputEmail3" class="col-sm-2 col-form-label " style="font-size: 20px;">Email :</label>
+                <label for="email" class="col-sm-2 col-form-label " style="font-size: 20px;">Email :</label>
                 <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail3">
+                    <input type="text" class="form-control"  id="email">
                 </div>
             </div>
+            <br>
             <span id="emailerr" style="color:red;"></span>
-            <div class="row mb-3">
+            <!-- <div class="row mb-3">
                 <label for="inputPassword3" class="col-sm-2 col-form-label" style="font-size: 20px;">Password</label>
                 <div class="col-sm-10">
                     <input type="password" class="form-control" id="inputPassword3">
                 </div>
             </div>
-            <span id="passerr" style="color:red;"></span>
+            <span id="passerr" style="color:red;"></span> -->
 
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-primary" onclick="formvalidation()">Submit</button>
             <br>
             <p id="success" style="color:green;"></p>
         </form>
     </div>
 
 
-    <!-- <script>
+    <script>
 
 
         const formvalidation = () => {
-            
+
             let name = document.getElementById('name').value;
             let email = document.getElementById('email').value;
-            let email = document.getElementById('password').value;
+            // let password = document.getElementById('password').value;
 
             let check = true
             if (!name) {
@@ -71,17 +72,24 @@
                     check = false
                 }
             }
-            if (check ===true) {
+
+
+
+
+           
+
+
+            if (check === true) {
                 document.getElementById('success').innerHTML = "<h2>Form is submitted </h2>"
-              
+
             }
             document.getElementById('name').value = "";
             document.getElementById('email').value = "";
-        
+
         }
 
 
-    </script> -->
+    </script>
 
 
 
