@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url('../img/1672083205791_Custom_css.png') ;
+}
+
+div {   
+    margin: 260px;
+    border: 1px black;
+    background-color: #c8f044e2;
+    display: inline-block;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+h1{
+    font-size: 40px;
+    color: #0800ff;
+}
+
+h4{
+    margin-top: 40px;
+    font-size: 50px;
+}
+
+button{
+    margin-top: 30px;
+    margin-right: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+button:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button#decrement{
+    background-color: #1778e6;
+}
+button#decrement:hover{
+    background-color: #211d88;
+    color: #fff;
+}
+
+button#reset{
+    background-color: #c1a6f6;
+}
+button#reset:hover{
+    background-color: #ae2ab3;
+    color: #fff;
+}
+
+button#increment{
+    background-color: #aedbbe;
+}
+button#increment:hover{
+    background-color: #049c39;
+    color: #fff;
+}
