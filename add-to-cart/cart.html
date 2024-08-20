@@ -36,7 +36,7 @@
             let tbl = "";
             let sum = 0;
             allcart.map((val, i) => {
-                sum = sum + val.price * val.qty;
+                sum = sum + parseInt(val.price)  * val.qty;
                 tbl += `
                     <tr>
                         <td>${++i}</td>
@@ -48,9 +48,9 @@
                         <td>
                             <input class="form-control w-25" id="qty_${val.id}" type="number" onchange="editQty(${val.id})" value="${val.qty}"/>
                         </td>
-                         <td>${val.price * val.qty}</td>
+                         <td>${parseInt(val.price) * parseInt(val.qty)}</td>
                          <td>
-                            <button onclick="deleteCart(${val.id})">delete</button>
+                            <button onclick="deleteCart(${val.id})" >delete</button>
                         </td>
                     </tr>
                  `
