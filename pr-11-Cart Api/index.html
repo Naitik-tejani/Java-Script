@@ -4,77 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cart Api</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Product Cards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.765);
+            color: #fff;
+            font-family: 'Cursive', cursive;
+        }
+
+        .card {
+            background-color: #333;
+            border: none;
+            border-radius: 15px;
+        }
+
+        .card-img-top {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            border-radius: 20px;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004080;
+        }
+    </style>
 </head>
-<style>
-    body {
-        background-color: rgb(254, 247, 121);
-    }
-</style>
 
 <body>
-    <div align="center">
-        <h2 style="font-family: sans-serif;font-weight:700;font-size:25px;">View cart Product</h2>
-        
-        <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-          
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+    <section>
+        <h1 class="text-center my-5">Product Cards</h1>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row" id="recode">
+                <!-- Cards will be injected here by JavaScript -->
             </div>
-          </div>
-    </div>
+        </div>
+    </section>
 
-<script>
-
-const carts = [
-            {
-                "id": 1,
-                "products": [
-                    {
-                        "id": 144,
-                        "title": "Cricket Helmet",
-                        "price": 44.99,
-                        "quantity": 4,
-                        "total": 179.96,
-                        "discountPercentage": 11.47,
-                        "discountedTotal": 159.32,
-                        "thumbnail": "https://cdn.dummyjson.com/products/images/sports-accessories/Cricket%20Helmet/thumbnail.png"
-                    }
-                ],
-                "total": 4794.8,
-                "discountedTotal": 4288.95,
-                "userId": 142,
-                "totalProducts": 5,
-                "totalQuantity": 20
-            },
-            {
-                "id": 2,
-                "products": [
-                    {
-                        "id": 200,
-                        "title": "Basketball",
-                        "price": 20.99,
-                        "quantity": 3,
-                        "total": 62.97,
-                        "discountPercentage": 10,
-                        "discountedTotal": 56.67,
-                        "thumbnail": "https://cdn.dummyjson.com/products/images/sports-accessories/Basketball/thumbnail.png"
-                    }
-                ],
-                "total": 1230.5,
-                "discountedTotal": 1107.45,
-                "userId": 145,
-                "totalProducts": 3,
-                "totalQuantity": 15
-            }
-        ];
-         
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        fetch(`https://dummyjson.com/carts`)
+            .then(response => response.json())
+            .then((cart) => {
+                let all = cart.carts;
+                let tbl = "";
+                all.forEach(val => {
+                    val.products.forEach(pro => {
+                        tbl += `
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="${pro.thumbnail}" class="card-img-top" alt="${pro.title}">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Id: ${pro.id}</h5>
+                                        <h5 class="card-title">Name: ${pro.title}</h5>
+                                        <p class="card-text">Price: Rs.${pro.price}</p>
+                                        <p class="card-text">Quantity: ${pro.quantity}</p>
+                                        <p class="card-text">Total: Rs.${pro.total}</p>
+                                        <p class="card-text">Discount: ${pro.discountPercentage}%</p>
+                                        <p class="card-text">Discounted Total: Rs.${pro.discountedTotal}</p>
+                                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    });
+                    tbl += `
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Cart Summary</h5>
+                                    <p class="card-text">Total: Rs.${val.total}</p>
+                                    <p class="card-text">Discounted Total: Rs.${val.discountedTotal}</p>
+                                    <p class="card-text">User ID: ${val.userId}</p>
+                                    <p class="card-text">Total Products: ${val.totalProducts}</p>
+                                    <p class="card-text">Total Quantity: ${val.totalQuantity}</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+                document.getElementById('recode').innerHTML = tbl;
+            });
+    </script>
 </body>
 
 </html>
